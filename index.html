@@ -18,8 +18,8 @@
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     line-height:1.6;-webkit-font-smoothing:antialiased}
 
-  header{background:linear-gradient(135deg,#3c6b46,#5b8c5a);color:#fff;padding:34px 28px 26px}
-  .head-wrap{max-width:1100px;margin:0 auto}
+  header{background:linear-gradient(135deg,#3c6b46,#5b8c5a);color:#fff}
+  .head-wrap{max-width:1100px;margin:0 auto;padding:34px 28px 26px}
   .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.85;margin-bottom:8px}
   header h1{margin:0;font-size:27px;font-weight:700;letter-spacing:-.01em}
   header p{margin:8px 0 0;opacity:.92;font-size:14.5px;max-width:640px}
@@ -29,15 +29,15 @@
   /* HOME cards */
   .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-    padding:24px 22px;box-shadow:var(--shadow);cursor:pointer;transition:.16s;display:flex;flex-direction:column;align-items:center;text-align:center}
+    padding:22px;box-shadow:var(--shadow);cursor:pointer;transition:.16s;display:flex;flex-direction:column}
   .card:hover{transform:translateY(-3px);border-color:var(--green);box-shadow:0 10px 30px rgba(40,60,30,.12)}
-  .card .ic{width:50px;height:50px;border-radius:12px;background:var(--green-l);display:flex;align-items:center;
-    justify-content:center;margin:0 auto 14px;font-size:23px}
-  .card h2{margin:0 0 8px;font-size:18px;color:var(--green-d);min-height:48px;display:flex;align-items:center;justify-content:center}
-  .card p{margin:0 0 16px;font-size:14px;color:var(--muted);flex:1}
-  .card .meta{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;min-height:24px}
+  .card .ic{width:46px;height:46px;border-radius:12px;background:var(--green-l);display:flex;align-items:center;
+    justify-content:center;margin-bottom:14px;font-size:22px}
+  .card h2{margin:0 0 6px;font-size:18px;color:var(--green-d)}
+  .card p{margin:0 0 14px;font-size:14px;color:var(--muted);flex:1}
+  .card .meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
   .card .pill{font-size:11.5px;font-weight:600;color:var(--green-d);background:var(--green-l);padding:3px 10px;border-radius:999px}
-  .card .go{align-self:center;font-weight:650;color:var(--green-d);font-size:14px}
+  .card .go{align-self:flex-start;font-weight:650;color:var(--green-d);font-size:14px}
   .card .go::after{content:" →"}
   .home-note{margin-top:26px;color:var(--muted);font-size:13.5px;text-align:center}
 
@@ -107,7 +107,7 @@
 
   @media (max-width:760px){
     .wrap{padding:18px}
-    header{padding:24px 18px}
+    .head-wrap{padding:24px 18px}
     .rolebar-in{padding:10px 18px}
     .rsearch input{width:140px}
   }
